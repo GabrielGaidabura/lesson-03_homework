@@ -135,4 +135,15 @@ def flatten (array)
 	array
 end
 
-#9 ...
+#9 sort_by even and odd numbers with descending, sort_by length of words
+def sort_by_even_and_odd_numbers_with_desc (array)
+	array.sort_by do |e| 
+		[e%2, -e]
+	end	
+end
+
+def sort_by_length (array)
+	array.sort_by do |word| 
+		[word.length]
+	end	
+end
